@@ -1,10 +1,6 @@
 @media screen and (max-width: 992px) {
 }
-* {
-  margin: 0px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.8;
-}
+
 :root {
   --primary-color: #199cdb;
   --secondary-color: #d0d0d0;
@@ -12,7 +8,6 @@
 .bg-grey {
   background: #f7f7f7;
 }
-
 
 
  
@@ -30,13 +25,7 @@
   color:red;
   font-weight: 700;
 }
-section > .container {
-  width: 1170px;
-  margin: auto;
-  display: block;
 
-  padding: 30px 50px;
-}
 img {
   display: block;
   width: 100%;
@@ -117,6 +106,8 @@ img {
 #about .container {
   display: flex;
 flex-direction: column-reverse;
+width: 100%;
+  max-width: 100%;
 }
 
 #about .container .section-title {
@@ -146,6 +137,8 @@ flex-direction: column-reverse;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  width: 100%;
+  max-width: 100%;
 }
 .job-item {
   border: 1px solid var(--secondary-color);;
@@ -289,10 +282,6 @@ flex:nowrap;
 
 /* Phần dự án */
 
-.project-container {
-  display:flex;
-width: 1200px;
-}
 
 .project-img{
   border: 1px solid var(--secondary-color);
